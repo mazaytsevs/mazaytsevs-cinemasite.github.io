@@ -1,0 +1,247 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  zoom: 0.3;
+  position: relative;
+}
+h1 {
+  font-size: 100px;
+  color: #6FE9FE;
+  margin: 50px;
+  padding: 0 250px;
+}
+h2 {
+  font-size: 75px;
+  color: #5F13B4;
+}
+h3 {
+  font-size: 50px;
+  color: #5E57DC;
+}
+.general {
+  padding: 0 500px;
+}
+.film-names {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: #5606B0;
+  font-weight: bolder;
+}
+.film-descriptions {
+  font-size: 40px;
+  margin-top: 10px;
+  color: #5606B0;
+  font-weight: 500;
+}
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #5200AE;
+}
+.header-menu {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  height: 100%;
+}
+.header-menu div {
+  margin: 20px;
+}
+.title {
+  display: flex;
+  margin: 25px 0 25px 200px;
+}
+.new {
+  display: flex;
+  justify-content: space-between;
+}
+.recommend {
+  display: flex;
+  justify-content: space-between;
+}
+.sticker {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  width: 180px;
+  height: 90px;
+  border-radius: 10%;
+  background-color: green;
+  opacity: 80%;
+  bottom: 350px;
+  left: 30px;
+}
+.subscription {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+  width: 180px;
+  height: 90px;
+  border-radius: 10%;
+  background-color: green;
+  opacity: 80%;
+  bottom: 440px;
+  left: 270px;
+}
+
+.sticker p {
+  display: flex;
+  align-items: center;
+  color: white;
+  opacity: 100%;
+  font-size: 80px;
+  margin: 0;
+}
+.descriptions {
+  display: flex;
+  flex-direction: column;
+}
+.film {
+  position: relative;
+  margin: 0 100px 0 200px;
+  /* z-index: 1; */
+}
+.header-menu h3:hover {
+  color: #F3C558;
+}
+.images {
+  height: 1100px;
+  position: relative;
+  z-index: 1;
+}
+.film:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.logo {
+  padding-right: 700px;
+}
+.account {
+  padding-left: 700px;
+}
+@media (min-width: 768px) and (max-width: 1400px) {
+  * {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  h1 {
+    padding: 0;
+    margin: 0;
+  }
+  .header {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .header-menu {
+    align-self: flex-start;
+    order: 2;
+    padding: 50px 50px;
+  }
+  .images {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .logo, .account {
+    justify-content: space-between;
+    align-self: flex-start;
+    padding: 0 50px;
+  }
+  .logo h1, .account h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .account h1 {
+    font-size: 50px;
+    align-items: flex-end;
+  }
+  .general {
+    padding: 0;
+    justify-content: space-evenly;
+
+  }
+  .new, .recommend {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .film, .title {
+    margin: 50px 50px 0 50px; 
+  }
+  .header-menu div {
+    margin: 0 50px 0 0;
+  }
+  .ElbrusCinema {
+    padding-top: 25px;
+  }
+  .sticker {
+    bottom: 320px;
+  }
+  .subscription {
+    bottom: 410px;
+  }
+}
+@media (max-width: 767px) {
+  * {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  h1 {
+    padding: 0;
+    margin: 0;
+  }
+  .header {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .header-menu {
+    align-self: flex-start;
+    order: 2;
+    padding: 50px 50px;
+  }
+  .images {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .logo, .account {
+    justify-content: space-between;
+    align-self: flex-start;
+    padding: 0 50px;
+  }
+  .logo h1, .account h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .account h1 {
+    font-size: 50px;
+    align-items: flex-end;
+  }
+  .general {
+    padding: 0;
+    justify-content: space-evenly;
+
+  }
+  .new, .recommend {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .film, .title {
+    margin: 50px 50px 0 50px; 
+  }
+  .header-menu div {
+    margin: 0 50px 0 0;
+  }
+  .ElbrusCinema {
+    padding-top: 25px;
+  }
+  .sticker {
+    bottom: 320px;
+  }
+  .subscription {
+    bottom: 410px;
+  }
+}
